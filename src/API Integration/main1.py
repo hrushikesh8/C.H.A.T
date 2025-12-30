@@ -15,8 +15,9 @@ AUTH_TOKEN = "test123token"
 
 
 # Google Drive model file IDs
-SEGMENTATION_MODEL_URL = "https://drive.google.com/file/d/1lR0iGnt0dVLd2MmVpXH3CRQSv030d7lW/view?usp=sharing"
-CLASSIFICATION_MODEL_URL = "https://drive.google.com/file/d/1PUoZUAJt3w0R9ncC86A2sGA6p3T1y5cj/view?usp=sharing"
+SEGMENTATION_MODEL_URL = os.getenv("SEGMENTATION_MODEL_URL")
+CLASSIFICATION_MODEL_URL = os.getenv("CLASSFICATION_MODEL_URL")
+
 # Labels for classification model
 CLASS_LABELS = ['Mild Anemia', 'Moderate Anemia', 'No Anemia', 'Severe Anemia']
 
