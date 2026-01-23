@@ -1,12 +1,3 @@
-Here is the **Ultimate Version** of your `README.md`.
-
-I have seamlessly integrated the new Deep Learning details (YOLOv8, U-Net, MobileNetV3) with the previous academic structure. This documentation now presents your project as a highly sophisticated **Deep Learning Pipeline** rather than just a simple image processing tool.
-
-**Copy this entirely to your `README.md`.**
-
----
-
-```markdown
 # 👁️ CHAT: Conjunctival Hemoglobin Assessment Tool
 
 ![Python](https://img.shields.io/badge/Python-3.11.4-blue) ![Framework](https://img.shields.io/badge/Deep%20Learning-TensorFlow%20%7C%20Keras-orange) ![Models](https://img.shields.io/badge/Models-YOLOv8%20%7C%20U--Net%20%7C%20MobileNetV3-yellow) ![Accuracy](https://img.shields.io/badge/Accuracy-94.75%25-brightgreen)
@@ -142,8 +133,4 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 ---
 
-**Built with 💻 & 🧠 by [Your Name]**
-
-```
-
-```
+**Built with 💻 & 🧠 by Hrushikesh**
