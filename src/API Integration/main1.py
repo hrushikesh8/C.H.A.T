@@ -128,3 +128,5 @@ def reload_models():
     segmentation_model = download_model(SEGMENTATION_MODEL_URL, "segmentation_model.h5")
     classification_model = download_model(CLASSIFICATION_MODEL_URL, "classification_model.h5")
     return {"message": "Models reloaded successfully!"}
+#this indicates the model reloaded successfully
+
