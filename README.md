@@ -33,7 +33,7 @@ The **Anemia Detection System (CHAT)** is a deep learning solution engineered to
 
 The system strength lies in its modular pipeline, ensuring only the most relevant visual data (the conjunctiva) is passed to the classifier.
 
-![System Architecture](imgs/architecture.png)
+![System Architecture](Imgs/Architecture.jpg)
 *Figure 1: End-to-End Execution Flow: Detection -> Segmentation -> Classification.*
 
 ### 1. 👁️ Eye Detection (YOLOv8)
@@ -48,13 +48,13 @@ Post-detection, the image undergoes:
 ### 3. 🎯 Segmentation (U-Net + ResNet-34)
 A **U-Net architecture** with a **ResNet-34 encoder** backbone isolates the specific **Region of Interest (ROI)**—the palpebral conjunctiva—from eyelashes and sclera. The skip connections in U-Net preserve high-resolution spatial details for a precise mask.
 
-![Segmentation Model Architecture](imgs/Segmentation_Model.png)
+![Segmentation Model Architecture](Imgs/Segmentation_Model.png)
 *Figure 2: U-Net Architecture used for precise ROI Segmentation.*
 
 ### 4. 📊 Classification (MobileNetV3-Large)
 The segmented ROI is fed into a **Fine-Tuned MobileNetV3-Large** model. Chosen for its efficiency and transfer learning capabilities, this model predicts the specific anemia severity class.
 
-![Classification Model Architecture](imgs/classification_Model.jpg)
+![Classification Model Architecture](Imgs/Classification_Model.jpg)
 *Figure 3: MobileNetV3 Architecture fine-tuned for Severity Classification.*
 
 ---
