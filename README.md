@@ -1,3 +1,8 @@
+Here is the updated `README.md` file. I have inserted the correct image paths into the appropriate sections (Architecture, Segmentation, Classification, and Results) and added a dedicated "Visual Results" section as you suggested to showcase the model outputs.
+
+**Copy the code below directly into your `README.md` file.**
+
+```markdown
 # 👁️ CHAT: Conjunctival Hemoglobin Assessment Tool
 
 ![Python](https://img.shields.io/badge/Python-3.11.4-blue) ![Framework](https://img.shields.io/badge/Deep%20Learning-TensorFlow%20%7C%20Keras-orange) ![Models](https://img.shields.io/badge/Models-YOLOv8%20%7C%20U--Net%20%7C%20MobileNetV3-yellow) ![Accuracy](https://img.shields.io/badge/Accuracy-94.75%25-brightgreen)
@@ -33,6 +38,9 @@ The **Anemia Detection System (CHAT)** is a deep learning solution engineered to
 
 The system strength lies in its modular pipeline, ensuring only the most relevant visual data (the conjunctiva) is passed to the classifier.
 
+![System Architecture](imgs/architecture.png)
+*Figure 1: End-to-End Execution Flow: Detection -> Segmentation -> Classification.*
+
 ### 1. 👁️ Eye Detection (YOLOv8)
 The raw input image is first processed by **YOLOv8**. This model automatically locates the eye, cropping out irrelevant background noise (skin, nose, environment) to focus the system on the relevant anatomy.
 
@@ -45,11 +53,14 @@ Post-detection, the image undergoes:
 ### 3. 🎯 Segmentation (U-Net + ResNet-34)
 A **U-Net architecture** with a **ResNet-34 encoder** backbone isolates the specific **Region of Interest (ROI)**—the palpebral conjunctiva—from eyelashes and sclera. The skip connections in U-Net preserve high-resolution spatial details for a precise mask.
 
+![Segmentation Model Architecture](imgs/Segmentation_Model.png)
+*Figure 2: U-Net Architecture used for precise ROI Segmentation.*
+
 ### 4. 📊 Classification (MobileNetV3-Large)
 The segmented ROI is fed into a **Fine-Tuned MobileNetV3-Large** model. Chosen for its efficiency and transfer learning capabilities, this model predicts the specific anemia severity class.
 
-![Project Workflow Diagram](screenshots/workflow.png)
-*Figure 1: End-to-End Execution Flow: Detection -> Segmentation -> Classification.*
+![Classification Model Architecture](imgs/classification_Model.jpg)
+*Figure 3: MobileNetV3 Architecture fine-tuned for Severity Classification.*
 
 ---
 
@@ -77,8 +88,8 @@ The model was validated against a clinically labeled dataset, demonstrating high
 | **Precision** | 0.92 |
 | **F1-Score** | 0.91 |
 
-![Confusion Matrix](screenshots/result.png)
-*Figure 2: Confusion Matrix demonstrating classification performance across the 4 severity levels.*
+![Confusion Matrix](Imgs/Confusion_Matrix.jpg)
+*Figure 4: Confusion Matrix demonstrating classification performance across the 4 severity levels.*
 
 ---
 
@@ -117,16 +128,6 @@ python src/main_pipeline.py
 
 ---
 
-## 📸 Visual Results
-
-To better understand the process, here are the outputs from the different stages of the pipeline:
-
-### Detection & ROI Extraction
-
-*Figure 3: (Left) YOLOv8 Eye Detection | (Right) U-Net Segmentation Mask.*
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
@@ -134,3 +135,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 ---
 
 **Built with 💻 & 🧠 by Hrushikesh**
+
+```
+
+```
