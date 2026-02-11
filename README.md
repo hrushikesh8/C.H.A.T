@@ -1,8 +1,3 @@
-Here is the updated `README.md` file. I have inserted the correct image paths into the appropriate sections (Architecture, Segmentation, Classification, and Results) and added a dedicated "Visual Results" section as you suggested to showcase the model outputs.
-
-**Copy the code below directly into your `README.md` file.**
-
-```markdown
 # 👁️ CHAT: Conjunctival Hemoglobin Assessment Tool
 
 ![Python](https://img.shields.io/badge/Python-3.11.4-blue) ![Framework](https://img.shields.io/badge/Deep%20Learning-TensorFlow%20%7C%20Keras-orange) ![Models](https://img.shields.io/badge/Models-YOLOv8%20%7C%20U--Net%20%7C%20MobileNetV3-yellow) ![Accuracy](https://img.shields.io/badge/Accuracy-94.75%25-brightgreen)
