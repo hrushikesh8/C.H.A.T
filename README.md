@@ -129,8 +129,6 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 ---
 
-**Built with 💻 & 🧠 by Hrushikesh**
-
-```
+**Built with 💻 & 🧠 by Hrushikesh Bunni**
 
 ```
